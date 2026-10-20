@@ -6,7 +6,7 @@ export const profile = {
   location: "Malaysia 🇲🇾",
   email: "hello@youremail.com",
   github: "https://github.com/bikartembikai",
-  linkedin: "https://linkedin.com/in/bikartembikai",
+  linkedin: "https://linkedin.com/in/amir-afham-7a44a2327",
   cvUrl: "/Resume_MuhammadAmirAfham.pdf",
 };
 

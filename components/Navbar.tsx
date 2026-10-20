@@ -74,11 +74,13 @@ export default function Navbar() {
 
                 {/* Mobile nav */}
                 <Sheet open={open} onOpenChange={setOpen}>
-                    <SheetTrigger asChild className="md:hidden">
-                        <Button variant="ghost" size="icon">
+                    <SheetTrigger
+                        render={
+                            <Button variant="ghost" size="icon" className="md:hidden">
                             {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-                        </Button>
-                    </SheetTrigger>
+                            </Button>
+                        }
+                    />
                     <SheetContent side="right" className="w-64 bg-card border-border">
                         <nav className="flex flex-col gap-2 mt-8">
                             {navLinks.map((link) => (
