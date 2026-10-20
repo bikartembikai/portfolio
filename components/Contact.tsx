@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { Mail, MapPin, ArrowRight } from "lucide-react";
 
 const GithubIcon = ({ className }: { className?: string }) => (
@@ -42,6 +43,12 @@ const contactLinks = [
 ];
 
 export default function Contact() {
+    const [year, setYear] = useState<number | null>(null);
+
+    useEffect(() => {
+        setYear(new Date().getFullYear());
+    }, []);
+
     return (
         <section id="contact" className="py-24 px-6 relative">
             {/* Background gradient */}
@@ -152,7 +159,7 @@ export default function Contact() {
                 <p>
                     Designed & Built by{" "}
                     <span className="gradient-text font-semibold">{profile.name}</span> ·{" "}
-                    {new Date().getFullYear()}
+                    {year ?? ""}
                 </p>
                 <p className="mt-1 text-xs opacity-60">
                     Made with Next.js, shadcn/ui & ❤️
