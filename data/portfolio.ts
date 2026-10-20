@@ -1,13 +1,13 @@
 export const profile = {
-  name: "Your Name",
+  name: "Muhammad Amir Afham",
   role: "Full-Stack Developer",
   tagline: "Building impactful digital experiences — from idea to production.",
   bio: "I'm a passionate full-stack developer who loves turning complex problems into elegant, scalable solutions. I enjoy working across the entire stack — from crafting intuitive UIs to designing robust backend systems. When I'm not coding, I'm exploring new technologies and contributing to open-source.",
   location: "Malaysia 🇲🇾",
   email: "hello@youremail.com",
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername",
-  cvUrl: "#",
+  github: "https://github.com/bikartembikai",
+  linkedin: "https://linkedin.com/in/bikartembikai",
+  cvUrl: "/Resume_MuhammadAmirAfham.pdf",
 };
 
 export const skills = [
